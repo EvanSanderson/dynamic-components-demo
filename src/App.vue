@@ -1,24 +1,33 @@
+<script>
+import TwoColumnPage from "./components/TwoColumnPage";
+import ourData from "./data/ourData.json";
+
+export default {
+  name: "app",
+  components: {
+    TwoColumnPage
+  },
+  data() {
+    return {
+      pageConfig: []
+    };
+  },
+  created() {
+    this.pageConfig = ourData.page_one;
+  }
+};
+</script>
+
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+	<h1>Our Page</h1>
+	<component :is="pageConfig.type" :slots="pageConfig.slots" />
   </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

@@ -1,0 +1,100 @@
+{
+  "page_one": {
+    "type": "two-column-page",
+    "slots": [
+      {
+        "name": "main-content",
+        "modules": [
+          {
+            "type": "image-gallery",
+            "data": [
+              "https://picsum.photos/200/300",
+              "https://picsum.photos/300",
+              "https://picsum.photos/300/300"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "side-bar",
+        "modules": [
+          {
+            "type": "by-line",
+            "data": "Evan Sanderson"
+          },
+          {
+            "type": "saved-items",
+            "data": ["Saved Item 1", "Saved Item 2", "Saved Item 3"]
+          }
+        ]
+      }
+    ]
+  },
+  "page_two": {
+    "type": "two-column-page",
+    "slots": [
+      {
+        "name": "side-bar",
+        "modules": [
+          {
+            "type": "image-gallery",
+            "data": [
+              "https://picsum.photos/200/300",
+              "https://picsum.photos/300",
+              "https://picsum.photos/300/300"
+            ]
+          },
+          {
+            "type": "by-line",
+            "data": "Evan Sanderson"
+          }
+        ]
+      },
+      {
+        "name": "main-content",
+        "modules": [
+          {
+            "type": "saved-items",
+            "data": ["Saved Item 1", "Saved Item 2", "Saved Item 3"]
+          }
+        ]
+      }
+    ]
+  },
+  "page_three": {
+    "type": "two-column-page",
+    "slots": [
+      {
+        "name": "side-bar",
+        "modules": [
+          {
+            "type": "image-gallery",
+            "data": [
+              "https://picsum.photos/200/300",
+              "https://picsum.photos/300",
+              "https://picsum.photos/300/300"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "main-content",
+        "modules": [
+          {
+            "type": "saved-items",
+            "data": ["Saved Item 1", "Saved Item 2", "Saved Item 3"]
+          }
+        ]
+      },
+      {
+        "name": "side-bar",
+        "modules": [
+          {
+            "type": "by-line",
+            "data": "Cool Man Jones"
+          }
+        ]
+      }
+    ]
+  }
+}
